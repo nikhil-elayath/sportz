@@ -13,7 +13,9 @@ export default function Homepage() {
     const searchSubmit=(event)=>{
         console.log("searchQuery", searchQuery)
         event.preventDefault();
-        const largeGroup = playerData.filter(data => (data.PFName === searchQuery));
+         const regexp = new RegExp(searchQuery, 'i');
+
+        const largeGroup = playerData.filter(data => (regexp.test(data.PFName)));
         setPlayerData(largeGroup)
 
         console.log("largeGroup",largeGroup)
