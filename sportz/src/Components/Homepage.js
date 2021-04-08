@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Card from "../ReuseableComponents/Card"
 import "../assests/styles/Components/Homepage.css"
+import SporztLogo from "../assests/icons/download.jpg"
+
 
 
 export default function Homepage() {
@@ -37,11 +39,17 @@ export default function Homepage() {
 
     return (
         <>
-            <div>
+            <div id="homepage__header">
+                <div id="homepage__headerLogoContainer">
+                    <img src={SporztLogo} id="homepage__headingLogo"/>
+                    
+                    </div>
+                <div id="homepage__searchContainer">
                 <form onSubmit={searchSubmit}>
-                <input placeholder="Enter player name" onChange={onTextEnter} onSubmit={searchSubmit}/>
-                search
+                <input id ="homepage__inputField"placeholder="Enter player name" onChange={onTextEnter} onSubmit={searchSubmit}/>
+                
                 </form>
+                </div>
             </div>
         <div id="homepage__mainContainer">
 

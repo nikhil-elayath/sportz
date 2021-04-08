@@ -2,7 +2,6 @@
 @media only screen and (max-width: 480px) {
 
     #homepage__mainContainer{
-        background-color: blue;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -11,17 +10,50 @@
     
     }
 
+
+    /* desktop */
+
     @media only screen and (min-width: 480px) {
         #homepage__mainContainer{
-            background-color: grey;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             text-align: center;
-            padding: 20px;
         
         
         }
 
+        #homepage__header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            text-align: center;
+           
+
+        }
+
+        #homepage__headingLogo{
+             height: 100px;
+            
+        }
+
+        #homepage__headerLogoContainer{
+            text-align: center;
+            align-items: center;
+        }
+
+        #homepage__searchContainer{
+            margin-right: 10px;
+            display: flex;
+        justify-content: space-between;
+            }
+
+            #homepage__inputField{
+                height: 20px;
+                width: 250px;
+                text-align: center;
+            }
      
 
 
