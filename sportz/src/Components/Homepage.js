@@ -17,7 +17,7 @@ export default function Homepage() {
         event.preventDefault();
         // filter through the data and matching the player name with the entered search query
          const regexp = new RegExp(searchQuery, 'i');
-        const largeGroup = playerData.filter(data => (regexp.test(data.PFName)));
+        const largeGroup = playerData.filter(data => (regexp.test(data.PFName || data.TName)));
         // setting the data with updated search data
         setPlayerData(largeGroup)
     }
@@ -34,6 +34,7 @@ export default function Homepage() {
         fetch('https://api.npoint.io/20c1afef1661881ddc9c')
         .then(response => response.json())
   .then(data => setPlayerData(data.playerList));
+
     },[])
 
 
