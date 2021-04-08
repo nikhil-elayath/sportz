@@ -1,6 +1,8 @@
 import React from 'react'
 import "../assests/styles/ReuseableComponents/Card.css"
 import PositionIcon from "../assests/icons/position.svg"
+import Football from "../assests/icons/football.svg"
+
 
 
 export default function Card(props) {
@@ -33,18 +35,15 @@ export default function Card(props) {
             </div>
             </div>
             
-            <div id="card__nameContainer">
-              Upcoming Match 
-
+            <div id="card__upcomingMatch">
               {props.upcomingMatch.map((item, index)=>{
-                  return (<><p>{item.CCode}</p> 
-                  vs <p>{item.VsCCode}</p> 
-                  <div id="card__nameContainer">
-              Time {item.MDate}
-
-            </div>
-                  
-                  
+                  return (<>
+                  <div id="card__footballAndText">
+                      <div id="card__footballImageContainer">
+                  <img src={Football} id="card__footballIcon"/>
+                  </div>
+                  {item.CCode} vs {item.VsCCode}
+                  </div>                  
                   
                   </>)
               })}           

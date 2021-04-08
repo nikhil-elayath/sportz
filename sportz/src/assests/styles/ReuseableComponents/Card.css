@@ -76,6 +76,26 @@
         align-items: center;
         }
 
+        #card__footballIcon{
+            height: 20px;
+        }
+
+        #card__footballAndText{
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+
+        #card__upcomingMatch{
+
+            display: flex;
+            justify-content: center;
+        }
+
+        #card__footballImageContainer{
+            padding-right: 10px;
+        }
+
 
 
 
