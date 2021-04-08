@@ -6,11 +6,14 @@ export default function Card(props) {
 
     return (
         <div id="card__mainContainer">
-            <div id="card__imageContainer">
+            <div id="card__imageContainer"> 
 
-                
-                
-                
+            {/* <img src={
+                    require(`../assests/player-images/${props.playerId}.jpg`).default}
+                    alt={"image"}
+                    />  */}
+            
+
                 </div>
             <div id="card__nameContainer">
                 Player Name: {props.playerFirstName}
