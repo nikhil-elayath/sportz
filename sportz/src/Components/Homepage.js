@@ -56,7 +56,7 @@ export default function Homepage() {
         <div id="homepage__mainContainer">
             {/* mapping the data and calling card component and passing the necessary props */}
 
-            {playerData.length!=0?playerData.map((item,index)=>{
+            {playerData.length!=0?playerData.slice(0).reverse().map((item,index)=>{
                 return (<Card 
                     playerId={item.Id}
                     playerFirstName={item.PFName}
