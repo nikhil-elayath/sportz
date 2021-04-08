@@ -5,8 +5,28 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 10px;
+        text-align: center;
     
     }
+    #homepage__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+       
+
+    }
+    #homepage__headingLogo{
+        height: 50px;
+       
+   }
+   #homepage__headerLogoContainer{
+    text-align: center;
+    align-items: center;
+}
     
     }
 

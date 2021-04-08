@@ -2,11 +2,13 @@
 @media only screen and (max-width: 480px) {
 
     #card__mainContainer{
-        background-color: aqua;
+        background-color: lightblue;
         margin-top: 20px;
         text-align: center;
         width: auto;
-        padding: 20px;
+        border-radius: 10px;
+
+        padding-top: 20px;
     
     }
 
@@ -15,10 +17,44 @@
         
     }
 
+    #positionIcon{
+        height: 30px;
+    }
 
 
+    
+    #card__footballIcon{
+        height: 20px;
+    }
+    #card__clockImage{
 
+        height: 20px;
+    }
 
+    #card__skillAndValueContainer
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+
+        #card__ValueText{
+            text-align: right;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        #card__upcomingMatchContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #card__footballAndText{
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+        }
 
     }
 
