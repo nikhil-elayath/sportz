@@ -12,6 +12,8 @@ export default function Homepage() {
         console.log("searchQuery", searchQuery)
         event.preventDefault();
         const largeGroup = playerData.filter(data => (data.PFName === searchQuery));
+        setPlayerData(largeGroup)
+
         console.log("largeGroup",largeGroup)
 
 
@@ -43,7 +45,7 @@ export default function Homepage() {
             </div>
         <div id="homepage__mainContainer">
 
-            {playerData.length!==0&&playerData.map((item,index)=>{
+            {playerData.length!=0?playerData.map((item,index)=>{
                 return (<Card 
                     playerId={item.Id}
                     playerFirstName={item.PFName}
@@ -51,7 +53,15 @@ export default function Homepage() {
                     playerValue={item.Value}
                     upcomingMatch={item.UpComingMatchesList}
                 />)
-            })}
+            }): <div>
+                No results found
+                 </div>
+        
+        
+        
+        
+        }
+
 
             
             
