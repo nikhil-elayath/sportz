@@ -1,3 +1,7 @@
+// Accepts the following props
+// playerId, playerFirstName, skillDescription, playerValue, upcomingMatch
+
+
 import React from 'react'
 import "../assests/styles/ReuseableComponents/Card.css"
 import PositionIcon from "../assests/icons/position.svg"
@@ -11,10 +15,11 @@ export default function Card(props) {
     return (
         <div id="card__mainContainer">
             <div id="card__imageContainer"> 
-
+        {/* as there are not images present for certain player id it throws an error */}
+        {/* ran out of time so hardcoded for now */}
             <img src={
                     require(`../assests/player-images/${"63706"}.jpg`).default}
-                    alt={"image"}
+                    alt={"image not available"}
                     id="card__playerImage"
                     /> 
             
@@ -67,11 +72,7 @@ export default function Card(props) {
                   </>)
               })}           
 
-            </div>
-
-
-
-            
+            </div>      
             
         </div>
     )
