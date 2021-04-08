@@ -2,6 +2,7 @@ import React from 'react'
 import "../assests/styles/ReuseableComponents/Card.css"
 import PositionIcon from "../assests/icons/position.svg"
 import Football from "../assests/icons/football.svg"
+import Clock from "../assests/icons/clock.svg"
 
 
 
@@ -43,16 +44,34 @@ export default function Card(props) {
                   <img src={Football} id="card__footballIcon"/>
                   </div>
                   {item.CCode} vs {item.VsCCode}
-                  </div>                  
+                  </div> 
+                                  
                   
                   </>)
               })}           
 
             </div>
-            <div id="card__nameContainer">
-              Time {props.matchTime}
+            <div id="card__upcomingMatch">
+              {props.upcomingMatch.map((item, index)=>{
+                  return (<>
+                <div id="card__upcomingMatchContainer">
+                    <div>
+                    <img src={Clock} id="card__clockImage"/>
+                    </div>
+                    <div id="card__time">
+                      {item.MDate}
+                      </div>
+                      </div>
+                                  
+                  
+                  </>)
+              })}           
 
             </div>
+
+
+
+            
             
         </div>
     )

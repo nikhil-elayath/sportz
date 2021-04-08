@@ -96,6 +96,20 @@
             padding-right: 10px;
         }
 
+            #card__clockImage{
+
+                height: 20px;
+            }
+
+            #card__upcomingMatchContainer{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            #card__time{
+                padding-left: 10px;
+            }
 
 
 
