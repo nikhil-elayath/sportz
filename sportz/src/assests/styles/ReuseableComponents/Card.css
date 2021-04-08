@@ -14,6 +14,7 @@
 
     #card__playerImage{
         border-radius: 500px;
+        height: 50vw;
         
     }
 
@@ -47,7 +48,7 @@
         #card__upcomingMatchContainer{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
 
         #card__footballAndText{
@@ -55,7 +56,13 @@
             text-align: center;
             justify-content: space-evenly;
         }
-
+        #card__skillContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            text-align: center;
+            align-items: center;
+        }
     }
 
 /* desktop */
