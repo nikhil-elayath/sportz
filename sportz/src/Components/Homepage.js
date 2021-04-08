@@ -11,18 +11,10 @@ export default function Homepage() {
 
 
     const searchSubmit=(event)=>{
-        console.log("searchQuery", searchQuery)
         event.preventDefault();
          const regexp = new RegExp(searchQuery, 'i');
-
         const largeGroup = playerData.filter(data => (regexp.test(data.PFName)));
         setPlayerData(largeGroup)
-
-        console.log("largeGroup",largeGroup)
-
-
-
-
     }
     const onTextEnter=(enteredText)=>{
         console.log(enteredText.target.value)
@@ -34,7 +26,6 @@ export default function Homepage() {
         .then(response => response.json())
   .then(data => setPlayerData(data.playerList));
     },[])
-    console.log("after",playerData)
 
 
 
