@@ -8,10 +8,11 @@ export default function Card(props) {
         <div id="card__mainContainer">
             <div id="card__imageContainer"> 
 
-            {/* <img src={
-                    require(`../assests/player-images/${props.playerId}.jpg`).default}
+            <img src={
+                    require(`../assests/player-images/${"63706"}.jpg`).default}
                     alt={"image"}
-                    />  */}
+                    id="card__playerImage"
+                    /> 
             
 
                 </div>

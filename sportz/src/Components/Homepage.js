@@ -34,13 +34,14 @@ export default function Homepage() {
 
 
     return (
-        <div id="homepage__mainContainer">
+        <>
             <div>
                 <form onSubmit={searchSubmit}>
                 <input placeholder="Enter player name" onChange={onTextEnter} onSubmit={searchSubmit}/>
                 search
                 </form>
             </div>
+        <div id="homepage__mainContainer">
 
             {playerData.length!==0&&playerData.map((item,index)=>{
                 return (<Card 
@@ -55,5 +56,6 @@ export default function Homepage() {
             
             
         </div>
+        </>
     )
 }
