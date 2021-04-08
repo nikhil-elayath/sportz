@@ -1,5 +1,6 @@
 import React from 'react'
 import "../assests/styles/ReuseableComponents/Card.css"
+import PositionIcon from "../assests/icons/position.svg"
 
 
 export default function Card(props) {
@@ -17,16 +18,19 @@ export default function Card(props) {
 
                 </div>
             <div id="card__nameContainer">
-                Player Name: {props.playerFirstName}
+               <h2 id="card__playerName">{props.playerFirstName} </h2>
+
+            </div>
+            <div id="card__skillAndValueContainer">
+            <div id="card__skillContainer">
+            <img src={PositionIcon} id="positionIcon"/>
+            {props.skillDescription}
 
             </div>
             <div id="card__nameContainer">
-                Skills: {props.skillDescription}
+                Value: ${props.playerValue}
 
             </div>
-            <div id="card__nameContainer">
-                Value: {props.playerValue}
-
             </div>
             
             <div id="card__nameContainer">

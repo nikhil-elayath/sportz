@@ -27,6 +27,8 @@
         #card__mainContainer{
             background-color: aqua;
             margin: 20px;
+            border-radius: 10px;
+
 
             
          
@@ -42,6 +44,38 @@
         padding-top: 10px;
         text-align: center;
     }
+
+    #card__playerName{
+        padding: 0px;
+        margin: 0px;
+        /* font-family: ''; */
+    }
+    #card__skillContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: center;
+        align-items: center;
+    }
+
+    #positionIcon{
+        height: 30px;
+    }
+
+     #card__ValueText{
+        text-align: right;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    #card__skillAndValueContainer
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+
 
 
 
